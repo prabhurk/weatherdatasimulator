@@ -11,19 +11,19 @@ Weather Data Simulator is toy simulation program that generates mock weather dat
 
 ### Installation
 
-Goto project root directory ```WeatherDataSimulator/```, the directory where ```pom.xml``` for WeatherDataSimulator is present. 
+Goto project root directory ```weatherdatasimulator/```, the directory where ```pom.xml``` for weatherdatasimulator is present. 
 
 Execute the command:
 ```
 mvn clean install
 ```
 
-The following required outputs (there will be other stuffs as well along with the required) will be generated in ```WeatherDataSimulator/target```:
+The following required outputs (there will be other stuffs as well along with the required) will be generated in ```weatherdatasimulator/target```:
 * log4j.properties
 * weatherdata_config.properties
 * weatherdatasimulator-jar-with-dependencies.jar
 
-Before executing the command, make sure to close all opened files from ```WeatherDataSimulator/target``` folder. Also exit from ```WeatherDataSimulator/target``` if command prompt or shell is presently locked in.
+Before executing the command, make sure to close all opened files from ```weatherdatasimulator/target``` folder. Also exit from ```weatherdatasimulator/target``` if command prompt or shell is presently locked in.
 
 
 ## Configuration / Input
@@ -65,7 +65,7 @@ The property file is related to ```com.simulation.sample.weather.util.Constants.
 
 ## Execution
 
-Either the program can be run from ```WeatherDataSimulator/target``` or the ```weatherdatasimulator-jar-with-dependencies.jar```, ```weatherdata_config.properties``` and ```log4j.properties``` can be copied to a common location and can be run from there.
+Either the program can be run from ```weatherdatasimulator/target``` or the ```weatherdatasimulator-jar-with-dependencies.jar```, ```weatherdata_config.properties``` and ```log4j.properties``` can be copied to a common location and can be run from there.
 
 In anyways, goto the location where ```weatherdatasimulator-jar-with-dependencies.jar``` is present (```weatherdata_config.properties``` and ```log4j.properties``` are also to be present)
 
@@ -86,7 +86,7 @@ Example execution command:  ```java -jar weatherdatasimulator-jar-with-dependenc
 
 After execution of the program, result, the required number of mock weather data will be generated in a text file in the same location as in ```weatherdatasimulator-jar-with-dependencies.jar``` is present.
 
-Previously present results will not be replaced/removed. However, if you are running the program from ```WeatherDataSimulator/target```, then on next clean-install, ````target``` directory will be cleaned up.
+Previously present results will not be replaced/removed. However, if you are running the program from ```weatherdatasimulator/target```, then on next clean-install, ````target``` directory will be cleaned up.
 
 The weather data text file name will be ```com.simulation.sample.weather.util.Constants.OUTPUT_FILENAME_STARTER``` + program execution date in ```com.simulation.sample.weather.util.Constants.OUTPUT_FILENAME_TIMESTAMP_FORMAT``` + ```com.simulation.sample.weather.util.Constants.OUTPUT_FILEEXTENSION```
 
@@ -111,7 +111,7 @@ Example data: ```Brisbane|-27.47,153.03,22|2016-11-24T19:20:10Z|Rain|+24.0|1027.
 
 Along with weather data, test case execution results/details (execution of test cases based on configuration) will be generated in a text file in the same location as in ```weatherdatasimulator-jar-with-dependencies.jar``` is present.
 
-Previously present results will not be replaced/removed. However, if you are running the program from ```WeatherDataSimulator/target```, then on next clean-install, ```target``` directory will be cleaned up.
+Previously present results will not be replaced/removed. However, if you are running the program from ```weatherdatasimulator/target```, then on next clean-install, ```target``` directory will be cleaned up.
 
 The text file name will be ```com.simulation.sample.weather.util.Constants.OUTPUT_FILENAME_STARTER``` + program execution date in ```com.simulation.sample.weather.util.Constants.OUTPUT_FILENAME_TIMESTAMP_FORMAT``` + ```_tc``` + ```com.simulation.sample.weather.util.Constants.OUTPUT_FILEEXTENSION```
 
@@ -134,7 +134,7 @@ Example data: ```1|WeatherData_TC_001|PASS|Checks if a file exists|File: weather
 
 Along with weather data, log file based on log4j.properties will be generated in the same location as in ```weatherdatasimulator-jar-with-dependencies.jar``` is present. If only stdout logs are enabled, logs will be redirected to console and no log file will be generated.
 
-Previously present results will not be replaced/removed. However, if you are running the program from ```WeatherDataSimulator/target```, then on next clean-install, target directory will be cleaned up.
+Previously present results will not be replaced/removed. However, if you are running the program from ```weatherdatasimulator/target```, then on next clean-install, target directory will be cleaned up.
 
 The text file name will be ```com.simulation.sample.weather.util.Constants.OUTPUT_FILENAME_STARTER``` + program execution date in ```com.simulation.sample.weather.util.Constants.OUTPUT_FILENAME_TIMESTAMP_FORMAT``` + ```_log```
 
