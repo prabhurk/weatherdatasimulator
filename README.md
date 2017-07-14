@@ -84,9 +84,9 @@ Example execution command:  ```java -jar weatherdatasimulator-jar-with-dependenc
 
 ### Weather Data
 
-After execution of the program, result, the required number of mock weather data will be generated in a text file in the same location as in ```weatherdatasimulator-jar-with-dependencies.jar``` is present.
+After execution of the program, result, the required number of mock weather data, will be generated in a text file in the same location as in ```weatherdatasimulator-jar-with-dependencies.jar``` is present.
 
-Previously present results will not be replaced/removed. However, if you are running the program from ```weatherdatasimulator/target```, then on next clean-install, ````target``` directory will be cleaned up.
+Previously generated results will not be replaced/removed. However, if you are running the program from ```weatherdatasimulator/target```, then on next clean-install, ```target``` directory will be cleaned up.
 
 The weather data text file name will be ```com.simulation.sample.weather.util.Constants.OUTPUT_FILENAME_STARTER``` + program execution date in ```com.simulation.sample.weather.util.Constants.OUTPUT_FILENAME_TIMESTAMP_FORMAT``` + ```com.simulation.sample.weather.util.Constants.OUTPUT_FILEEXTENSION```
 
@@ -111,7 +111,7 @@ Example data: ```Brisbane|-27.47,153.03,22|2016-11-24T19:20:10Z|Rain|+24.0|1027.
 
 Along with weather data, test case execution results/details (execution of test cases based on configuration) will be generated in a text file in the same location as in ```weatherdatasimulator-jar-with-dependencies.jar``` is present.
 
-Previously present results will not be replaced/removed. However, if you are running the program from ```weatherdatasimulator/target```, then on next clean-install, ```target``` directory will be cleaned up.
+Previously generated results will not be replaced/removed. However, if you are running the program from ```weatherdatasimulator/target```, then on next clean-install, ```target``` directory will be cleaned up.
 
 The text file name will be ```com.simulation.sample.weather.util.Constants.OUTPUT_FILENAME_STARTER``` + program execution date in ```com.simulation.sample.weather.util.Constants.OUTPUT_FILENAME_TIMESTAMP_FORMAT``` + ```_tc``` + ```com.simulation.sample.weather.util.Constants.OUTPUT_FILEEXTENSION```
 
@@ -162,7 +162,7 @@ Prabhu R K
  
 ## Version
 
-0.0.1 
+0.0.1 - Initial and complete release version
 
 ## License
 
